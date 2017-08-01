@@ -84,7 +84,7 @@ class Parser:
             return "0"
 
     def do_parser(self, header):
-        parser_proxy_support = urllib2.ProxyHandler({"http":"http://web-proxy.oa.com:8080"})
+        parser_proxy_support = urllib2.ProxyHandler({"http":"http://www.baidu.com:8080"})
         parser_opener        = urllib2.build_opener(parser_proxy_support)
         urllib2.install_opener(parser_opener)
 
